@@ -1,0 +1,38 @@
+<form action="">
+    <h1>Criar Cliente</h1>
+
+    <div class="forms">
+        <mat-form-field class="form">
+            <mat-label>Nome</mat-label>
+            <input [(ngModel)]="cliente.nome" name="cliente.nome" matInput placeholder="NOME">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+        <mat-label>CPF/CNPJ</mat-label>
+        <input [(ngModel)]="cliente.documento" name="cliente.documento" matInput placeholder="CPF/CNPJ">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+            <mat-label>Email</mat-label>
+            <input [(ngModel)]="cliente.email" name="cliente.email" matInput placeholder="EMAIL">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+            <mat-label>Telefone</mat-label>
+            <input [(ngModel)]="cliente.telefone" name="cliente.telefone" matInput placeholder="TELEFONE">
+        </mat-form-field>
+
+      <!--<mat-form-field class="form">
+            <mat-label>Endereço</mat-label>
+            <input [(ngModel)]="cliente.endereco.cep" name="cliente.endereco?.cep" matInput placeholder="cep">
+        </mat-form-field> -->
+
+    </div>
+
+    <div class="buttons">
+        <button (click)="create()" mat-stroked-button color="primary">Create</button>
+        <button (click)="cancel()" mat-stroked-button color="warn">Cancel</button>
+
+    </div>
+    
+</form>

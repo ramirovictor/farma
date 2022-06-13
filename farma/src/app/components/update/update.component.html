@@ -1,0 +1,62 @@
+<form action="">
+    <h1>Atualizar Cliente</h1>
+
+    <div class="forms">
+        <mat-form-field class="form">
+            <mat-label>Nome</mat-label>
+            <input [(ngModel)]="cliente.nome" name="cliente.nome" matInput placeholder="nome">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+        <mat-label>CPF</mat-label>
+        <input [(ngModel)]="cliente.documento" name="cliente.documento" matInput placeholder="01565420596">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+        <mat-label>EMAIL</mat-label>
+        <input [(ngModel)]="cliente.email" name="cliente.email" matInput placeholder="email@email.com">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+        <mat-label>TELEFONE</mat-label>
+        <input [(ngModel)]="cliente.telefone" name="cliente.telefone" matInput placeholder="(62)9 98582535">
+        </mat-form-field>
+
+     <!--   <h1>Endereço</h1>
+        <mat-form-field class="form">
+        <mat-label>CEP</mat-label >
+        <input [(ngModel)]="cliente.endereco" name="cliente.endereco.cep" matInput placeholder="CEP">
+        </mat-form-field>
+
+   
+
+        <mat-form-field class="form">
+        <mat-label>Complemento</mat-label>
+        <input [(ngModel)]="cliente.endereco" name="cliente.endereco.complemento" matInput placeholder="Complemento">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+        <mat-label>Bairro</mat-label>
+        <input [(ngModel)]="cliente.endereco" name="cliente.endereco.bairro" matInput placeholder="Bairro">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+        <mat-label>Cidade</mat-label>
+        <input [(ngModel)]="cliente.endereco" name="cliente.endereco.cidade" matInput placeholder="Cidade">
+        </mat-form-field>
+        <mat-form-field class="form">
+        <mat-label>UF</mat-label>
+        <input [(ngModel)]="cliente.endereco" name="cliente.endereco.uf" matInput placeholder="UF">
+        </mat-form-field>
+
+        -->
+
+    </div>
+
+    <div class="buttons">
+        <button (click)="update()" mat-stroked-button color="primary">Update</button>
+        <button (click)="cancel()" mat-stroked-button color="warn">Cancel</button>
+
+    </div>
+    
+</form>

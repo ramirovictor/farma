@@ -1,0 +1,21 @@
+<div class="container">
+
+  <h1>Clientes Inativos</h1>
+  
+    <div class="badge">
+      <button (click)="voltar()" mat-stroked-button color="primary">Voltar</button>
+    </div>
+    
+      <div class="content" *ngFor="let item of listaInativos">
+          <mat-card class="mat-elevation-z8">
+              
+              <mat-card-header>   
+                <mat-card-title>{{item.nome}}</mat-card-title>
+                <mat-card-subtitle>{{item.documento}}</mat-card-subtitle>
+                <mat-card-subtitle>{{item.email}}</mat-card-subtitle>
+                <mat-card-subtitle>{{item.telefone}}</mat-card-subtitle>
+              </mat-card-header>
+            </mat-card>
+            
+      </div>
+  </div>
